@@ -13,9 +13,9 @@ const BookMark = (props) => {
     );
 };
 BookMark.propTypes = {
-    bookmark: PropTypes.bool,
-    bookMark: PropTypes.func,
-    id: PropTypes.string
+    bookmark: PropTypes.bool.isRequired,
+    bookMark: PropTypes.func.isRequired,
+    id: PropTypes.string.isRequired
 };
 
 export default BookMark;

@@ -28,13 +28,10 @@ const Users = () => {
     };
 
     const handleFavourite = (id) => {
+        console.log("Favourite ", id);
         const newUsers = users.map((user) => {
             if (user._id === id) {
-                if (user.bookmark) {
-                    return (user.bookmark = false);
-                } else {
-                    return (user.bookmark = true);
-                }
+                user.bookmark = !user.bookmark;
             }
             return user;
         });
